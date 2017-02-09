@@ -6,4 +6,9 @@ block content
 		li First Name: #{first_name}
 		li Last Name: #{last_name}
 		li Email: #{email}
-		li User ID: #{id}	
+		li User ID: #{id}
+
+	a(class="editsubscriber" href="/editsubscriber/#{id}") Edit
+	| |
+	a(class="deletesubscriber" href="javascript: deleteSubscriber()" data-id="#{id}") Delete
+
